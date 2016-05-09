@@ -28,6 +28,19 @@ public class ButtonViewer
     private JButton button10;
     private JButton button11;
     private JButton button12;
+    private JButton button13;
+    private JButton button14;
+    private JButton button15;
+    private JButton button16;
+    private JButton button17;
+    private JButton button18;
+    private JButton button19;
+    private JButton button20;
+    private JButton button21;
+    private JButton button22;
+    private JButton button23;
+    private JButton button24;
+    private JButton button25;
     private JPanel soundBoard;
     private JLabel currSong;
     
@@ -47,7 +60,7 @@ public class ButtonViewer
         button3 = new JButton("SILENCE");
         button3.setPreferredSize(new Dimension(500,150));
         soundBoard.add(button3);
-        
+         
         button4 = new JButton("NO!!");
         button4.setPreferredSize(new Dimension(500,150));
         soundBoard.add(button4);
@@ -84,9 +97,57 @@ public class ButtonViewer
         button12.setPreferredSize(new Dimension(500,150));
         soundBoard.add(button12);
         
+        button13 = new JButton("SHIA LA BEOUF");
+        button13.setPreferredSize(new Dimension(500,150));
+        soundBoard.add(button13);
         
-        currSong = new JLabel();
-        soundBoard.add(currSong);
+        button14 = new JButton("T-REX");
+        button14.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button14);
+        
+        button15 = new JButton("GUN SHOT");
+        button15.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button15);
+        
+        button16 = new JButton("R2D2 SCREAM");
+        button16.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button16);
+        
+        button17 = new JButton("WILHELM SCREAM");
+        button17.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button17);
+        
+        button18 = new JButton("CRICKETS");
+        button18.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button18);
+        
+        button19 = new JButton("DRUM ROLL");
+        button19.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button19);
+        
+        button20 = new JButton("SAD TROMBONE");
+        button20.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button20);
+        
+        button21 = new JButton("DEEZ NUTS");
+        button21.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button21);
+        
+        button22 = new JButton("20th CENTURY FOX (RE)");
+        button22.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button22);
+        
+        button23 = new JButton("I AM YOUR FATHER");
+        button23.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button23);
+        
+        button24 = new JButton("DANIEL");
+        button24.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button24);
+        
+        button25 = new JButton("DUN DUN DUN");
+        button25.setPreferredSize(new Dimension(500, 150));
+        soundBoard.add(button25);
         
         frame.add(soundBoard);
         
@@ -103,6 +164,19 @@ public class ButtonViewer
         button10.addActionListener(listener);
         button11.addActionListener(listener);
         button12.addActionListener(listener);
+        button13.addActionListener(listener);
+        button14.addActionListener(listener);
+        button15.addActionListener(listener);
+        button16.addActionListener(listener);
+        button17.addActionListener(listener);
+        button18.addActionListener(listener);
+        button19.addActionListener(listener);
+        button20.addActionListener(listener);
+        button21.addActionListener(listener);
+        button22.addActionListener(listener);
+        button23.addActionListener(listener);
+        button24.addActionListener(listener);
+        button25.addActionListener(listener);
         
         button.setFont(new Font("Arial", Font.PLAIN, 50));
         button2.setFont(new Font("Arial", Font.PLAIN, 50));
@@ -116,7 +190,19 @@ public class ButtonViewer
         button10.setFont(new Font("Arial", Font.PLAIN, 50));
         button11.setFont(new Font("Arial", Font.PLAIN, 50));
         button12.setFont(new Font("Arial", Font.PLAIN, 50));
-        
+        button13.setFont(new Font("Arial", Font.PLAIN, 50));
+        button14.setFont(new Font("Arial", Font.PLAIN, 50));
+        button15.setFont(new Font("Arial", Font.PLAIN, 50));
+        button16.setFont(new Font("Arial", Font.PLAIN, 50));
+        button17.setFont(new Font("Arial", Font.PLAIN, 50));
+        button18.setFont(new Font("Arial", Font.PLAIN, 50));
+        button19.setFont(new Font("Arial", Font.PLAIN, 50));
+        button20.setFont(new Font("Arial", Font.PLAIN, 50));
+        button21.setFont(new Font("Arial", Font.PLAIN, 50));
+        button22.setFont(new Font("Arial", Font.PLAIN, 30));
+        button23.setFont(new Font("Arial", Font.PLAIN, 40));
+        button24.setFont(new Font("Arial", Font.PLAIN, 50));
+        button25.setFont(new Font("Arial", Font.PLAIN, 50));
         
         frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -180,6 +266,45 @@ public class ButtonViewer
                     break;
                     case "SHUT UP":
                     soundName="ShutUp.wav";
+                    break;
+                    case "SHIA LA BEOUF":
+                    soundName="ShiaLaBeouf.wav";
+                    break;
+                    case "T-REX":
+                    soundName="T_Rex.wav";
+                    break;
+                    case "GUN SHOT":
+                    soundName="GunShot.wav";
+                    break;
+                    case "R2D2 SCREAM":
+                    soundName="R2D2Scream.wav";
+                    break;
+                    case "WILHELM SCREAM":
+                    soundName="WilhelmScream.wav";
+                    break;
+                    case "CRICKETS":
+                    soundName="Crickets.wav";
+                    break;
+                    case "DRUM ROLL":
+                    soundName="DrumRoll.wav";
+                    break;
+                    case "SAD TROMBONE":
+                    soundName="SadTrombone.wav";
+                    break;
+                    case "DEEZ NUTS":
+                    soundName="DeezNuts.wav";
+                    break;
+                    case "20th CENTURY FOX (RE)":
+                    soundName="20thCenturyRecorder.wav";
+                    break;
+                    case "I AM YOUR FATHER":
+                    soundName="IAmYourFather.wav";
+                    break;
+                    case "DANIEL":
+                    soundName="Daniel.wav";
+                    break;
+                    case "DUN DUN DUN":
+                    soundName="DunDunDun.wav";
                     break;
                 }
                 if (clip !=null && clip.isRunning())
