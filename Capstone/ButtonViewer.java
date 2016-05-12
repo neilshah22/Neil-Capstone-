@@ -46,6 +46,7 @@ public class ButtonViewer
     
     public ButtonViewer()
     {
+               
         frame = new JFrame();
         soundBoard = new JPanel();
         
@@ -178,6 +179,7 @@ public class ButtonViewer
         button24.addActionListener(listener);
         button25.addActionListener(listener);
         
+        //I learned how to manipulate font from stack overflow
         button.setFont(new Font("Arial", Font.PLAIN, 50));
         button2.setFont(new Font("Arial", Font.PLAIN, 50));
         button3.setFont(new Font("Arial", Font.PLAIN, 50));
@@ -312,6 +314,7 @@ public class ButtonViewer
                     clip.stop();
                     clip.close();
                 }
+                //I learned how to input audio sounds from a JavaDoc labeled AudioInputStream
                 audioInputStream = AudioSystem.getAudioInputStream(new File(soundName).getAbsoluteFile());
                 clip=(Clip)AudioSystem.getLine(new DataLine.Info(Clip.class,audioInputStream.getFormat())); 
                 
